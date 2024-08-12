@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 8</title>
+</head>
+<body>
+    <form id="form8">
+        <label for="terms">I agree to the terms and conditions:</label>
+        <input type="checkbox" id="terms" name="terms">
+        <button type="submit">Submit</button>
+      </form>
+      
+      <script>
+      document.getElementById("form8").onsubmit = function() {
+          var terms = document.getElementById("terms").checked;
+          if (!terms) {
+              alert("You must agree to the terms and conditions.");
+              return false;
+          }
+          return true;
+      };
+      </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 4</title>
+</head>
+<body>
+    <form id="form4">
+        <label for="password">password (at more than 8 characters): </label>
+        <input type="password" id="password" name="password">
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        document.getElementById('form4').onsubmit = function(){
+            let password = document.getElementById('password').value;
+            if (password.length < 8) {
+                alert("Password must be at more than 8 characters long.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

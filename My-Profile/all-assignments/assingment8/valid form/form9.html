@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 9</title>
+</head>
+<body>
+    <form id="form9">
+        <label for="password">Password (must include letters, numbers, and special characters):</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Submit</button>
+      </form>
+      
+      <script>
+      document.getElementById("form9").onsubmit = function() {
+          var password = document.getElementById("password").value;
+          var regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+          if (!regex.test(password)) {
+              alert("Password must include letters, numbers, and special characters.");
+              return false;
+          }
+          return true;
+      };
+      </script>
+</body>
+</html>

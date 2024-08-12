@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 1300px; 
+            margin: auto;
+            font-size: 100px;
+        }
+        h1 {
+            text-align: center; 
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ex_3</h1>
+    <a href="quiz3.html" style="font-size: 30px;"> < Back </a>
+    <hr>
+    <div id="show"></div>
+    <script>
+        let arr = [1,2,3,4,5,6,7];
+        let show_index = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 !== 0){
+               show_index[i] = i;
+            }
+        }
+        document.getElementById('show').innerHTML = "Index: "+show_index;
+    </script>
+</body>
+</html>

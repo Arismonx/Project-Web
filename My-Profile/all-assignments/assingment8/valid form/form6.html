@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 5</title>
+</head>
+<body>
+    <form id="form6">
+        <label for="phone">Phone Number: </label>
+        <input type="text" id="phone" name="phone">
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        document.getElementById('form6').onsubmit = function(){
+            let phone = document.getElementById('phone').value;
+            let regex = /^\d{10}$/;
+            if (!regex.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

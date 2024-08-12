@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+function dice(form){
+  form.die1.value = Math.floor(Math.random()*6+1)
+}
+</script>
+</head>
+<body>
+
+    <form> 
+     Dice: 
+        <input type="text" name="die1" size="2"> 
+        <input type="button" value="Roll" name="B1" onClick="dice(this.form)" > 
+    </form>
+
+</body>
+</html>

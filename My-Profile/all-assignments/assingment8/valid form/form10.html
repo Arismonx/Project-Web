@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 10</title>
+</head>
+<body>
+    <form id="form10">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age">
+        <button type="submit">Submit</button>
+      </form>
+      
+      <script>
+      document.getElementById("form10").onsubmit = function() {
+          var age = document.getElementById("age").value;
+          if (isNaN(age) || age < 1) {
+              alert("Please enter a valid age.");
+              return false;
+          }
+          return true;
+      };
+      </script>
+</body>
+</html>

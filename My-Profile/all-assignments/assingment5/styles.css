@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+header h1 {
+    text-align: center;
+}
+header nav ul{
+    list-style-type: none; margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: lightgrey;
+}
+header nav ul li {
+    display: inline; margin: 0 5px;
+}
+header nav ul li a{
+    text-decoration: none;
+}
+.div1 h1{
+     background-color: coral;
+}
+.div1 aside{
+    background-color: lightgrey;
+    float: top; 
+    width: 20%;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}

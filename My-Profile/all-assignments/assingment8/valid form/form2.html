@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 2</title>
+</head>
+<body>
+    <form id="form2">
+        <label for="email">e-mail (Must have @): </label>
+        <input type="email" id="email" name="emal">
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        document.getElementById('form2').onsubmit = function(){
+            let email = document.getElementById('email').value;
+            let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!regex.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

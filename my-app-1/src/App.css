@@ -1,0 +1,23 @@
+.underline-red {
+    text-decoration: underline;
+    text-decoration-color: #FF537A;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    border-radius: 4px;
+  }
+
+  .underline-mint {
+    text-decoration: underline;
+    text-decoration-color: #00FFB5;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    border-radius: 4px;
+  }
+
+  .underline-sea {
+    text-decoration: underline;
+    text-decoration-color: #008FFF;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    border-radius: 4px;
+  }
